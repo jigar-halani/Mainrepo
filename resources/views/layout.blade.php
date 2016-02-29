@@ -25,7 +25,7 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     @if($signedIn)
-                    <li class=""><a href="{{url('/cards')}}">HomeSSSS</a></li>
+                    <li class=""><a href="{{url('/cards')}}">Home</a></li>
                     <li><a href="{{url('/demo')}}">Create</a></li>
                     @else
                     @endif
@@ -34,7 +34,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">LoginSSSSS</a></li>
+                        <li><a href="{{ url('/login') }}">Login</a></li>
                         <li><a href="{{ url('/register') }}">Register</a></li>
                     @else
                         <li class="dropdown">
